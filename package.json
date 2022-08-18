@@ -1,30 +1,34 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dinhhuy123/nodejs_blog.git"
-  },
-  "keywords": [
-    "blog",
-    "nodejs"
-  ],
-  "author": "huytruong",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dinhhuy123/nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/dinhhuy123/nodejs_blog#readme",
-  "dependencies": {
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dinhhuy123/nodejs_blog.git"
+    },
+    "keywords": [
+        "blog",
+        "nodejs"
+    ],
+    "author": "huytruong",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dinhhuy123/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/dinhhuy123/nodejs_blog#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.19"
+    }
 }
